@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assignment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#f7f0eb;">
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #653780">
+  <a class="navbar-brand" href="#">Assignment 2</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" onclick="showContent('about')">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="showContent('schedule')">Schedule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="showContent('hobbies')">Hobbies and Likes</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="aboutContent" style="display: none">
+  <h2>About Me</h2>
+  <h3>Ray Ann Vistada, Computer Science</h3>
+  <img id="cs" src="images/cs.jpg" alt="my career aspirations">
+  <div class="container-sm">Hi! My name is Ray Ann, and although I'm from the Philippines, I was
+    born and spent most of my life in Saudi Arabia. With the fact that I
+    lived in an extremely conservative country, I grew closer to using
+    electronics every day, and with the help of my father and sister, I
+    slowly gained interest in coding. I hope to one day work on video games,
+    or in general pursue the artistic side of coding.</div>
+</div>
+
+<div id="scheduleContent" style="display: none">
+  <h2>My Daily Schedule</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">8:00</th>
+        <th scope="col">9:00</th>
+        <th scope="col">10:00</th>
+        <th scope="col">11:00</th>
+        <th scope="col">12:00</th>
+        <th scope="col">13:00</th>
+        <th scope="col">14:00</th>
+        <th scope="col">15:00</th>
+        <th scope="col">16:00</th>
+        <th scope="col">17:00</th>
+        <th scope="col">18:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Monday</th>
+        <td></td>
+        <td>ENGL120</td>
+        <td>CSCI313</td>
+        <td></td>
+        <td></td>
+        <td>CSCI161</td>
+        <td></td>
+        <td></td>
+        <td>Work</td>
+        <td>Work</td>
+        <td>Work</td>
+      </tr>
+      <tr>
+        <th scope="row">Tuesday</th>
+        <td>Work</td>
+        <td>Work</td>
+        <td>Work</td>
+        <td>Work</td>
+        <td></td>
+        <td>CSCI161</td>
+        <td></td>
+        <td></td>
+        <td>CSCI222</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Wednesday</th>
+        <td></td>
+        <td>ENGL120</td>
+        <td>CSCI313</td>
+        <td></td>
+        <td></td>
+        <td>CSCI161</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Thursday</th>
+        <td>Work</td>
+        <td>Work</td>
+        <td>Work</td>
+        <td>Work</td>
+        <td></td>
+        <td>CSCI161</td>
+        <td></td>
+        <td></td>
+        <td>CSCI222</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Friday</th>
+        <td></td>
+        <td>ENGL120</td>
+        <td>CSCI313</td>
+        <td></td>
+        <td></td>
+        <td>CSCI161</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="hobbiesContent" style="display: none">
+  <h2>Hobbies and Likes</h2>
+  <img id="cat" src="images/cat.jpg" alt="My beloved cat, Minnie">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Favorite websites</th>
+        <th scope="col">Favorite books and movies</th>
+        <th scope="col">Hobbies</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p><a href="https://www.youtube.com/">Youtube</a></p>
+          <p><a href="https://store.steampowered.com/">Steam</a></p>
+          <p><a href="https://www.instagram.com/">Instagram</a></p>
+        </td>
+        <td>
+          <ul>
+            <li>Howl's Moving Castle</li>
+            <li>1984</li>
+            <li>Ponyo</li>
+          </ul>
+        </td>
+        <td>
+          <ol>
+            <li>Crocheting</li>
+            <li>Gaming</li>
+            <li>Plant care</li>
+          </ol>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  function showContent(contentId) {
+    document.getElementById("aboutContent").style.display = "none";
+    document.getElementById("scheduleContent").style.display = "none";
+    document.getElementById("hobbiesContent").style.display = "none";
+    document.getElementById(contentId + "Content").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
